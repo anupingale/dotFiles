@@ -1,5 +1,10 @@
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=${PATH}:/usr/local/mysql/bin/ 
+export DB_PASSWORD="password"
+export HOST_NAME="localhost"
+export USER_NAME="root"
+export DATABASE_NAME="dashboard"
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/pannapur/.oh-my-zsh"
@@ -93,6 +98,11 @@ alias al="~/Projects/assignments/javascript_assignment/array_practice/array_libr
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
+plugins=(
+git
+zsh-autosuggestions
+)
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -102,3 +112,4 @@ alias al="~/Projects/assignments/javascript_assignment/array_practice/array_libr
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [[ -s /Users/pannapur/.autojump/etc/profile.d/autojump.sh ]] && source /Users/pannapur/.autojump/etc/profile.d/autojump.sh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
